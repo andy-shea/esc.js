@@ -1,0 +1,35 @@
+{
+  "name": "esc.js",
+  "description": "Add escape key handlers with support for priorities",
+  "author": "Andy Shea <aa.shea@gmail.com>",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/esc.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andy-shea/esc.js"
+  },
+  "homepage": "https://github.com/andy-shea/esc.js",
+  "keywords": [
+    "event",
+    "escape",
+    "handler",
+    "keycode",
+    "priority"
+  ],
+  "browserslist": [
+    ">0.25%"
+  ],
+  "scripts": {
+    "build": "babel src -d lib",
+    "prepublishOnly": "yarn run build"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "devDependencies": {
+    "babel-cli": "^7.0.0-beta.3",
+    "babel-preset-env": "^7.0.0-beta.3"
+  }
+}
